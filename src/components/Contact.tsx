@@ -1,6 +1,6 @@
-/**
+﻿/**
  * Composant Contact - Section "Contact"
- * Affiche un formulaire de contact et les coordonnées
+ * Affiche un formulaire de contact et les coordonnÃ©es
  */
 "use client";
 
@@ -15,30 +15,30 @@ export default function Contact() {
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Contact
           </h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full" />
+          <div className="w-20 h-1 bg-slate-600 mx-auto rounded-full" />
           <p className="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            N&apos;hésitez pas à me contacter pour toute opportunité ou
+            N&apos;hÃ©sitez pas Ã  me contacter pour toute opportunitÃ© ou
             collaboration
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Coordonnées */}
+          {/* CoordonnÃ©es */}
           <div className="space-y-8">
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
               Restons en contact
             </h3>
             <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-              Je suis toujours ouvert aux nouvelles opportunités, qu&apos;il
+              Je suis toujours ouvert aux nouvelles opportunitÃ©s, qu&apos;il
               s&apos;agisse de stages, de projets collaboratifs ou simplement
               d&apos;une discussion sur la technologie.
             </p>
 
             {/* Email */}
             <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-900/50 flex items-center justify-center">
                 <svg
-                  className="w-6 h-6 text-blue-600 dark:text-blue-400"
+                  className="w-6 h-6 text-slate-600 dark:text-slate-400"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -57,7 +57,7 @@ export default function Contact() {
                 </p>
                 <a
                   href={`mailto:${personalInfo.email}`}
-                  className="text-gray-900 dark:text-white font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                  className="text-gray-900 dark:text-white font-medium hover:text-slate-600 dark:hover:text-slate-400 transition-colors"
                 >
                   {personalInfo.email}
                 </a>
@@ -66,9 +66,9 @@ export default function Contact() {
 
             {/* Localisation */}
             <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-900/50 flex items-center justify-center">
                 <svg
-                  className="w-6 h-6 text-blue-600 dark:text-blue-400"
+                  className="w-6 h-6 text-slate-600 dark:text-slate-400"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -103,7 +103,7 @@ export default function Contact() {
                 href={personalInfo.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-xl bg-blue-600 hover:bg-blue-700 flex items-center justify-center transition-colors shadow-md hover:shadow-lg"
+                className="w-12 h-12 rounded-xl bg-slate-600 hover:bg-slate-700 flex items-center justify-center transition-colors shadow-md hover:shadow-lg"
               >
                 <svg
                   className="w-5 h-5 text-white"
@@ -151,7 +151,7 @@ export default function Contact() {
                   id="name"
                   name="name"
                   required
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-slate-500 focus:border-transparent outline-none transition-all"
                   placeholder="Votre nom"
                 />
               </div>
@@ -169,7 +169,7 @@ export default function Contact() {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-slate-500 focus:border-transparent outline-none transition-all"
                   placeholder="votre@email.com"
                 />
               </div>
@@ -187,7 +187,7 @@ export default function Contact() {
                   id="subject"
                   name="subject"
                   required
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-slate-500 focus:border-transparent outline-none transition-all"
                   placeholder="Sujet du message"
                 />
               </div>
@@ -205,7 +205,7 @@ export default function Contact() {
                   name="message"
                   rows={4}
                   required
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all resize-none"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-slate-500 focus:border-transparent outline-none transition-all resize-none"
                   placeholder="Votre message..."
                 />
               </div>
@@ -213,7 +213,7 @@ export default function Contact() {
               {/* Bouton d'envoi */}
               <button
                 type="submit"
-                className="w-full px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2"
+                className="w-full px-6 py-3 bg-slate-600 hover:bg-slate-700 text-white font-medium rounded-lg transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2"
               >
                 <svg
                   className="w-5 h-5"
@@ -237,3 +237,4 @@ export default function Contact() {
     </section>
   );
 }
+

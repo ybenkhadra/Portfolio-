@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Composant Hero - Section d'accueil principale
  * Affiche le nom, le titre et les liens d'action
  */
@@ -11,17 +11,17 @@ export default function Hero() {
       id="accueil"
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
-      {/* Arrière-plan avec dégradé */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-indigo-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800" />
+      {/* ArriÃ¨re-plan avec dÃ©gradÃ© */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-sky-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800" />
       
-      {/* Cercles décoratifs */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-blue-200 dark:bg-blue-900/30 rounded-full mix-blend-multiply dark:mix-blend-normal filter blur-xl opacity-70 animate-pulse" />
-      <div className="absolute bottom-20 right-10 w-72 h-72 bg-indigo-200 dark:bg-indigo-900/30 rounded-full mix-blend-multiply dark:mix-blend-normal filter blur-xl opacity-70 animate-pulse" style={{ animationDelay: "2s" }} />
+      {/* Cercles dÃ©coratifs */}
+      <div className="absolute top-20 left-10 w-72 h-72 bg-slate-200 dark:bg-slate-900/30 rounded-full mix-blend-multiply dark:mix-blend-normal filter blur-xl opacity-70 animate-pulse" />
+      <div className="absolute bottom-20 right-10 w-72 h-72 bg-sky-200 dark:bg-sky-900/30 rounded-full mix-blend-multiply dark:mix-blend-normal filter blur-xl opacity-70 animate-pulse" style={{ animationDelay: "2s" }} />
 
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
         {/* Photo de profil */}
         <div className="mb-8 flex justify-center">
-          <div className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full overflow-hidden ring-4 ring-blue-500/30 shadow-2xl">
+          <div className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full overflow-hidden ring-4 ring-slate-500/30 shadow-2xl">
             <Image
               src={personalInfo.profileImage}
               alt={personalInfo.name}
@@ -33,9 +33,9 @@ export default function Hero() {
         </div>
 
         {/* Badge */}
-        <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 text-sm font-medium mb-6">
+        <div className="inline-flex items-center px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-900/50 text-slate-700 dark:text-slate-300 text-sm font-medium mb-6">
           <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse" />
-          Disponible pour des opportunités
+          Disponible pour des opportunitÃ©s
         </div>
 
         {/* Nom */}
@@ -44,7 +44,7 @@ export default function Hero() {
         </h1>
 
         {/* Titre */}
-        <p className="text-xl sm:text-2xl md:text-3xl text-blue-600 dark:text-blue-400 font-semibold mb-6">
+        <p className="text-xl sm:text-2xl md:text-3xl text-slate-600 dark:text-slate-400 font-semibold mb-6">
           {personalInfo.title}
         </p>
 
@@ -57,13 +57,13 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="#contact"
-            className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-full transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+            className="px-8 py-3 bg-slate-600 hover:bg-slate-700 text-white font-medium rounded-full transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
           >
             Me Contacter
           </a>
           <a
             href="#projets"
-            className="px-8 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:border-blue-600 hover:text-blue-600 dark:hover:border-blue-400 dark:hover:text-blue-400 font-medium rounded-full transition-all"
+            className="px-8 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:border-slate-600 hover:text-slate-600 dark:hover:border-slate-400 dark:hover:text-slate-400 font-medium rounded-full transition-all"
           >
             Voir mes Projets
           </a>
@@ -80,9 +80,9 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Flèche vers le bas */}
+        {/* FlÃ¨che vers le bas */}
         <div className="mt-16 animate-bounce">
-          <a href="#apropos" aria-label="Défiler vers le bas">
+          <a href="#apropos" aria-label="DÃ©filer vers le bas">
             <svg
               className="w-8 h-8 mx-auto text-gray-400"
               fill="none"
@@ -102,3 +102,4 @@ export default function Hero() {
     </section>
   );
 }
+

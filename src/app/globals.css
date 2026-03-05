@@ -34,8 +34,7 @@ html {
 
 /* Sélection de texte personnalisée */
 ::selection {
-  background-color: #3b82f6;
-  color: white;
+  @apply bg-slate-500 text-white;
 }
 
 /* ============================

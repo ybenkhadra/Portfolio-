@@ -1,6 +1,6 @@
-/**
- * Composant Experience - Section "Expérience Professionnelle"
- * Affiche les expériences avec descriptions et réalisations
+﻿/**
+ * Composant Experience - Section "ExpÃ©rience Professionnelle"
+ * Affiche les expÃ©riences avec descriptions et rÃ©alisations
  */
 import { experience } from "@/data/portfolio";
 
@@ -11,34 +11,34 @@ export default function Experience() {
         {/* Titre de section */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Expérience
+            ExpÃ©rience
           </h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full" />
+          <div className="w-20 h-1 bg-slate-600 mx-auto rounded-full" />
           <p className="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Mon parcours professionnel et mes réalisations
+            Mon parcours professionnel et mes rÃ©alisations
           </p>
         </div>
 
-        {/* Liste des expériences */}
+        {/* Liste des expÃ©riences */}
         <div className="space-y-8">
           {experience.map((exp, index) => (
             <div
               key={index}
-              className="group bg-gray-50 dark:bg-gray-800 rounded-xl p-6 sm:p-8 hover:shadow-lg transition-all border border-gray-100 dark:border-gray-700 hover:border-blue-200 dark:hover:border-blue-800"
+              className="group bg-gray-50 dark:bg-gray-800 rounded-xl p-6 sm:p-8 hover:shadow-lg transition-all border border-gray-100 dark:border-gray-700 hover:border-slate-200 dark:hover:border-slate-800"
             >
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
                 <div>
-                  {/* Rôle */}
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  {/* RÃ´le */}
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-slate-600 dark:group-hover:text-slate-400 transition-colors">
                     {exp.role}
                   </h3>
                   {/* Entreprise */}
-                  <p className="text-blue-600 dark:text-blue-400 font-medium">
-                    {exp.company} • {exp.location}
+                  <p className="text-slate-600 dark:text-slate-400 font-medium">
+                    {exp.company} â€¢ {exp.location}
                   </p>
                 </div>
-                {/* Période */}
-                <span className="mt-2 sm:mt-0 inline-block px-3 py-1 text-xs font-semibold text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/50 rounded-full whitespace-nowrap">
+                {/* PÃ©riode */}
+                <span className="mt-2 sm:mt-0 inline-block px-3 py-1 text-xs font-semibold text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-900/50 rounded-full whitespace-nowrap">
                   {exp.period}
                 </span>
               </div>
@@ -48,7 +48,7 @@ export default function Experience() {
                 {exp.description}
               </p>
 
-              {/* Réalisations */}
+              {/* RÃ©alisations */}
               {exp.achievements && exp.achievements.length > 0 && (
                 <ul className="space-y-2">
                   {exp.achievements.map((achievement, i) => (
@@ -81,3 +81,4 @@ export default function Experience() {
     </section>
   );
 }
+

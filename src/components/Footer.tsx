@@ -1,6 +1,6 @@
-/**
+﻿/**
  * Composant Footer - Pied de page
- * Affiche les crédits et les liens sociaux
+ * Affiche les crÃ©dits et les liens sociaux
  */
 import { personalInfo } from "@/data/portfolio";
 
@@ -15,10 +15,10 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <a
               href="#accueil"
-              className="text-xl font-bold hover:text-blue-400 transition-colors"
+              className="text-xl font-bold hover:text-slate-400 transition-colors"
             >
               {personalInfo.name.split(" ")[0]}
-              <span className="text-blue-400">.</span>
+              <span className="text-slate-400">.</span>
             </a>
             <p className="text-gray-400 text-sm mt-1">
               {personalInfo.title}
@@ -31,7 +31,7 @@ export default function Footer() {
               href={personalInfo.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-blue-400 transition-colors"
+              className="text-gray-400 hover:text-slate-400 transition-colors"
               aria-label="LinkedIn"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -51,7 +51,7 @@ export default function Footer() {
             </a>
             <a
               href={`mailto:${personalInfo.email}`}
-              className="text-gray-400 hover:text-blue-400 transition-colors"
+              className="text-gray-400 hover:text-slate-400 transition-colors"
               aria-label="Email"
             >
               <svg
@@ -72,10 +72,11 @@ export default function Footer() {
 
           {/* Copyright */}
           <p className="text-gray-500 text-sm text-center md:text-right">
-            &copy; {currentYear} {personalInfo.name}. Tous droits réservés.
+            &copy; {currentYear} {personalInfo.name}. Tous droits rÃ©servÃ©s.
           </p>
         </div>
       </div>
     </footer>
   );
 }
+

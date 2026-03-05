@@ -1,6 +1,6 @@
-/**
+﻿/**
  * Composant Projects - Section "Projets"
- * Affiche les projets sous forme de cartes avec liens GitHub et démo
+ * Affiche les projets sous forme de cartes avec liens GitHub et dÃ©mo
  */
 import { projects } from "@/data/portfolio";
 
@@ -13,9 +13,9 @@ export default function Projects() {
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Mes Projets
           </h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full" />
+          <div className="w-20 h-1 bg-slate-600 mx-auto rounded-full" />
           <p className="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Découvrez les projets sur lesquels j&apos;ai travaillé
+            DÃ©couvrez les projets sur lesquels j&apos;ai travaillÃ©
           </p>
         </div>
 
@@ -24,10 +24,10 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all border border-gray-100 dark:border-gray-700 hover:border-blue-200 dark:hover:border-blue-800 hover:-translate-y-1"
+              className="group bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all border border-gray-100 dark:border-gray-700 hover:border-slate-200 dark:hover:border-slate-800 hover:-translate-y-1"
             >
-              {/* En-tête coloré du projet */}
-              <div className="h-48 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center p-6">
+              {/* En-tÃªte colorÃ© du projet */}
+              <div className="h-48 bg-gradient-to-br from-slate-500 to-sky-600 flex items-center justify-center p-6">
                 <h3 className="text-xl font-bold text-white text-center">
                   {project.title}
                 </h3>
@@ -45,7 +45,7 @@ export default function Projects() {
                   {project.technologies.map((tech, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1 text-xs font-medium bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full"
+                      className="px-3 py-1 text-xs font-medium bg-slate-50 dark:bg-slate-900/30 text-slate-600 dark:text-slate-400 rounded-full"
                     >
                       {tech}
                     </span>
@@ -76,7 +76,7 @@ export default function Projects() {
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors"
+                      className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-slate-600 rounded-lg hover:bg-slate-700 transition-colors"
                     >
                       <svg
                         className="w-4 h-4"
@@ -91,7 +91,7 @@ export default function Projects() {
                           d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                         />
                       </svg>
-                      Démo
+                      DÃ©mo
                     </a>
                   )}
                 </div>
@@ -103,3 +103,4 @@ export default function Projects() {
     </section>
   );
 }
+

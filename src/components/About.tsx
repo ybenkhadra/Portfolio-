@@ -1,5 +1,5 @@
-/**
- * Composant About - Section "À propos de moi"
+﻿/**
+ * Composant About - Section "Ã€ propos de moi"
  * Affiche la description personnelle et les informations de base
  */
 import { personalInfo } from "@/data/portfolio";
@@ -11,16 +11,16 @@ export default function About() {
         {/* Titre de section */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            À Propos de Moi
+            Ã€ Propos de Moi
           </h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full" />
+          <div className="w-20 h-1 bg-slate-600 mx-auto rounded-full" />
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Avatar / Illustration */}
           <div className="flex justify-center">
             <div className="relative">
-              <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center shadow-2xl">
+              <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-2xl bg-gradient-to-br from-slate-500 to-sky-600 flex items-center justify-center shadow-2xl">
                 <span className="text-8xl sm:text-9xl text-white font-bold">
                   {personalInfo.name
                     .split(" ")
@@ -28,21 +28,21 @@ export default function About() {
                     .join("")}
                 </span>
               </div>
-              {/* Décoration */}
-              <div className="absolute -bottom-4 -right-4 w-64 h-64 sm:w-80 sm:h-80 rounded-2xl border-2 border-blue-600/30 -z-10" />
+              {/* DÃ©coration */}
+              <div className="absolute -bottom-4 -right-4 w-64 h-64 sm:w-80 sm:h-80 rounded-2xl border-2 border-slate-600/30 -z-10" />
             </div>
           </div>
 
-          {/* Texte à propos */}
+          {/* Texte Ã  propos */}
           <div>
             <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
               Salut, je suis{" "}
-              <span className="text-blue-600 dark:text-blue-400">
+              <span className="text-slate-600 dark:text-slate-400">
                 {personalInfo.name}
               </span>
             </h3>
 
-            {/* Description avec sauts de ligne préservés */}
+            {/* Description avec sauts de ligne prÃ©servÃ©s */}
             <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
               {personalInfo.about.split("\n\n").map((paragraph, index) => (
                 <p key={index}>{paragraph.trim()}</p>
@@ -52,9 +52,9 @@ export default function About() {
             {/* Informations rapides */}
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 rounded-lg bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-lg bg-slate-100 dark:bg-slate-900/50 flex items-center justify-center">
                   <svg
-                    className="w-5 h-5 text-blue-600 dark:text-blue-400"
+                    className="w-5 h-5 text-slate-600 dark:text-slate-400"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -84,9 +84,9 @@ export default function About() {
               </div>
 
               <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 rounded-lg bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-lg bg-slate-100 dark:bg-slate-900/50 flex items-center justify-center">
                   <svg
-                    className="w-5 h-5 text-blue-600 dark:text-blue-400"
+                    className="w-5 h-5 text-slate-600 dark:text-slate-400"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -116,7 +116,7 @@ export default function About() {
                 href={personalInfo.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-full transition-all shadow-md hover:shadow-lg gap-2"
+                className="inline-flex items-center px-6 py-3 bg-slate-600 hover:bg-slate-700 text-white font-medium rounded-full transition-all shadow-md hover:shadow-lg gap-2"
               >
                 <svg
                   className="w-5 h-5"
@@ -134,3 +134,4 @@ export default function About() {
     </section>
   );
 }
+

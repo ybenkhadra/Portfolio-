@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Composant Navbar - Barre de navigation responsive
  * Affiche les liens de navigation et les liens sociaux (LinkedIn, GitHub)
  */
@@ -17,10 +17,10 @@ export default function Navbar() {
           {/* Logo / Nom */}
           <a
             href="#accueil"
-            className="text-xl font-bold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            className="text-xl font-bold text-gray-900 dark:text-white hover:text-slate-600 dark:hover:text-slate-400 transition-colors"
           >
             {personalInfo.name.split(" ")[0]}
-            <span className="text-blue-600 dark:text-blue-400">.</span>
+            <span className="text-slate-600 dark:text-slate-400">.</span>
           </a>
 
           {/* Liens de navigation - Desktop */}
@@ -29,7 +29,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-all"
+                className="px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-slate-600 dark:hover:text-slate-400 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-all"
               >
                 {link.label}
               </a>
@@ -42,7 +42,7 @@ export default function Navbar() {
               href={personalInfo.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              className="text-gray-600 dark:text-gray-400 hover:text-slate-600 dark:hover:text-slate-400 transition-colors"
               aria-label="LinkedIn"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -102,7 +102,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-all"
+                  className="px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-slate-600 dark:hover:text-slate-400 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-all"
                 >
                   {link.label}
                 </a>
@@ -113,7 +113,7 @@ export default function Navbar() {
                   href={personalInfo.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-700 text-sm font-medium"
+                  className="text-slate-600 hover:text-slate-700 text-sm font-medium"
                 >
                   LinkedIn
                 </a>
@@ -133,3 +133,4 @@ export default function Navbar() {
     </nav>
   );
 }
+
