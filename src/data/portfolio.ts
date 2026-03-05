@@ -14,6 +14,9 @@
  */
 
 export const personalInfo = {
+  /** Votre photo de profil (placez l'image dans le dossier public/) */
+  profileImage: "/pfp.jpg",
+
   /** Votre nom complet */
   name: "Youssef Benkhadra",
 

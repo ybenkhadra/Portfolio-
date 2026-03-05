@@ -2,6 +2,7 @@
  * Composant Hero - Section d'accueil principale
  * Affiche le nom, le titre et les liens d'action
  */
+import Image from "next/image";
 import { personalInfo } from "@/data/portfolio";
 
 export default function Hero() {
@@ -18,6 +19,19 @@ export default function Hero() {
       <div className="absolute bottom-20 right-10 w-72 h-72 bg-indigo-200 dark:bg-indigo-900/30 rounded-full mix-blend-multiply dark:mix-blend-normal filter blur-xl opacity-70 animate-pulse" style={{ animationDelay: "2s" }} />
 
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
+        {/* Photo de profil */}
+        <div className="mb-8 flex justify-center">
+          <div className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full overflow-hidden ring-4 ring-blue-500/30 shadow-2xl">
+            <Image
+              src={personalInfo.profileImage}
+              alt={personalInfo.name}
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        </div>
+
         {/* Badge */}
         <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 text-sm font-medium mb-6">
           <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse" />
