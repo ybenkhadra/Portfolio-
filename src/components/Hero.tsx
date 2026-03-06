@@ -26,7 +26,11 @@ export default function Hero() {
               src={personalInfo.profileImage}
               alt={personalInfo.name}
               fill
+              sizes="(max-width: 640px) 144px, 176px"
               className="object-cover"
+              style={{
+                objectPosition: personalInfo.profileImagePosition ?? "50% 50%",
+              }}
               priority
             />
           </div>

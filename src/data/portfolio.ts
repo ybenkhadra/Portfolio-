@@ -17,6 +17,13 @@ export const personalInfo = {
   /** Votre photo de profil (placez l'image dans le dossier public/) */
   profileImage: "/pfp.jpg",
 
+  /**
+   * Focus/cadrage de la photo (CSS object-position).
+   * Utile si l'image est trop rognée sur mobile.
+   * Exemples: "50% 20%" (monter un peu), "50% 50%" (centré), "50% 0%" (haut)
+   */
+  profileImagePosition: "50% 20%",
+
   /** Votre nom complet */
   name: "Youssef Benkhadra",
 
