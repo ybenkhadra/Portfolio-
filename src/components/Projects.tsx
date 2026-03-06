@@ -1,12 +1,12 @@
 ﻿/**
  * Composant Projects - Section "Projets"
- * Affiche les projets sous forme de cartes avec liens GitHub et dÃ©mo
+ * Affiche les projets sous forme de cartes avec liens GitHub et démo
  */
 import { projects } from "@/data/portfolio";
 
 export default function Projects() {
   return (
-    <section id="projets" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <section id="projets" className="scroll-mt-20 py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Titre de section */}
         <div className="text-center mb-16">
@@ -15,7 +15,7 @@ export default function Projects() {
           </h2>
           <div className="w-20 h-1 bg-slate-600 mx-auto rounded-full" />
           <p className="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            DÃ©couvrez les projets sur lesquels j&apos;ai travaillÃ©
+            Découvrez les projets sur lesquels j&apos;ai travaillé
           </p>
         </div>
 
@@ -26,7 +26,7 @@ export default function Projects() {
               key={index}
               className="group bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all border border-gray-100 dark:border-gray-700 hover:border-slate-200 dark:hover:border-slate-800 hover:-translate-y-1"
             >
-              {/* En-tÃªte colorÃ© du projet */}
+              {/* En-tête coloré du projet */}
               <div className="h-48 bg-gradient-to-br from-slate-500 to-sky-600 flex items-center justify-center p-6">
                 <h3 className="text-xl font-bold text-white text-center">
                   {project.title}
@@ -91,7 +91,7 @@ export default function Projects() {
                           d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                         />
                       </svg>
-                      DÃ©mo
+                      Démo
                     </a>
                   )}
                 </div>

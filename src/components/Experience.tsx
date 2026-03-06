@@ -1,25 +1,25 @@
 ﻿/**
- * Composant Experience - Section "ExpÃ©rience Professionnelle"
- * Affiche les expÃ©riences avec descriptions et rÃ©alisations
+ * Composant Experience - Section "Expérience Professionnelle"
+ * Affiche les expériences avec descriptions et réalisations
  */
 import { experience } from "@/data/portfolio";
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-20 bg-white dark:bg-gray-900">
+    <section id="experience" className="scroll-mt-20 py-20 bg-white dark:bg-gray-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Titre de section */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            ExpÃ©rience
+            Expérience
           </h2>
           <div className="w-20 h-1 bg-slate-600 mx-auto rounded-full" />
           <p className="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Mon parcours professionnel et mes rÃ©alisations
+            Mon parcours professionnel et mes réalisations
           </p>
         </div>
 
-        {/* Liste des expÃ©riences */}
+        {/* Liste des expériences */}
         <div className="space-y-8">
           {experience.map((exp, index) => (
             <div
@@ -28,16 +28,16 @@ export default function Experience() {
             >
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
                 <div>
-                  {/* RÃ´le */}
+                  {/* Rôle */}
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-slate-600 dark:group-hover:text-slate-400 transition-colors">
                     {exp.role}
                   </h3>
                   {/* Entreprise */}
                   <p className="text-slate-600 dark:text-slate-400 font-medium">
-                    {exp.company} â€¢ {exp.location}
+                    {exp.company} • {exp.location}
                   </p>
                 </div>
-                {/* PÃ©riode */}
+                {/* Période */}
                 <span className="mt-2 sm:mt-0 inline-block px-3 py-1 text-xs font-semibold text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-900/50 rounded-full whitespace-nowrap">
                   {exp.period}
                 </span>
@@ -48,7 +48,7 @@ export default function Experience() {
                 {exp.description}
               </p>
 
-              {/* RÃ©alisations */}
+              {/* Réalisations */}
               {exp.achievements && exp.achievements.length > 0 && (
                 <ul className="space-y-2">
                   {exp.achievements.map((achievement, i) => (

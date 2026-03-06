@@ -9,12 +9,12 @@ export default function Hero() {
   return (
     <section
       id="accueil"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+      className="scroll-mt-20 min-h-screen flex items-center justify-center relative overflow-hidden"
     >
-      {/* ArriÃ¨re-plan avec dÃ©gradÃ© */}
+      {/* Arrière-plan avec dégradé */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-sky-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800" />
       
-      {/* Cercles dÃ©coratifs */}
+      {/* Cercles décoratifs */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-slate-200 dark:bg-slate-900/30 rounded-full mix-blend-multiply dark:mix-blend-normal filter blur-xl opacity-70 animate-pulse" />
       <div className="absolute bottom-20 right-10 w-72 h-72 bg-sky-200 dark:bg-sky-900/30 rounded-full mix-blend-multiply dark:mix-blend-normal filter blur-xl opacity-70 animate-pulse" style={{ animationDelay: "2s" }} />
 
@@ -35,7 +35,7 @@ export default function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-900/50 text-slate-700 dark:text-slate-300 text-sm font-medium mb-6">
           <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse" />
-          Disponible pour des opportunitÃ©s
+          Disponible pour des opportunités
         </div>
 
         {/* Nom */}
@@ -80,9 +80,9 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* FlÃ¨che vers le bas */}
+        {/* Flèche vers le bas */}
         <div className="mt-16 animate-bounce">
-          <a href="#apropos" aria-label="DÃ©filer vers le bas">
+          <a href="#apropos" aria-label="Défiler vers le bas">
             <svg
               className="w-8 h-8 mx-auto text-gray-400"
               fill="none"

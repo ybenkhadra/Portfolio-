@@ -1,14 +1,39 @@
 ﻿/**
  * Composant Contact - Section "Contact"
- * Affiche un formulaire de contact et les coordonnÃ©es
+ * Affiche un formulaire de contact et les coordonnées
  */
 "use client";
 
+import type { FormEvent } from "react";
 import { personalInfo } from "@/data/portfolio";
 
 export default function Contact() {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.currentTarget);
+    const name = String(formData.get("name") ?? "");
+    const email = String(formData.get("email") ?? "");
+    const subject = String(formData.get("subject") ?? "");
+    const message = String(formData.get("message") ?? "");
+
+    const mailSubject = subject.trim() || `Message depuis le portfolio`;
+    const mailBody = [
+      `Nom: ${name}`,
+      `Email: ${email}`,
+      "",
+      message,
+    ].join("\n");
+
+    const mailtoUrl = `mailto:${personalInfo.email}?subject=${encodeURIComponent(
+      mailSubject,
+    )}&body=${encodeURIComponent(mailBody)}`;
+
+    window.location.href = mailtoUrl;
+  };
+
   return (
-    <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <section id="contact" className="scroll-mt-20 py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Titre de section */}
         <div className="text-center mb-16">
@@ -17,19 +42,19 @@ export default function Contact() {
           </h2>
           <div className="w-20 h-1 bg-slate-600 mx-auto rounded-full" />
           <p className="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            N&apos;hÃ©sitez pas Ã  me contacter pour toute opportunitÃ© ou
+            N&apos;hésitez pas à me contacter pour toute opportunité ou
             collaboration
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
-          {/* CoordonnÃ©es */}
+          {/* Coordonnées */}
           <div className="space-y-8">
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
               Restons en contact
             </h3>
             <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-              Je suis toujours ouvert aux nouvelles opportunitÃ©s, qu&apos;il
+              Je suis toujours ouvert aux nouvelles opportunités, qu&apos;il
               s&apos;agisse de stages, de projets collaboratifs ou simplement
               d&apos;une discussion sur la technologie.
             </p>
@@ -133,9 +158,7 @@ export default function Contact() {
           {/* Formulaire de contact */}
           <div className="bg-white dark:bg-gray-900 rounded-xl p-6 sm:p-8 shadow-lg border border-gray-100 dark:border-gray-700">
             <form
-              action={`mailto:${personalInfo.email}`}
-              method="POST"
-              encType="text/plain"
+              onSubmit={handleSubmit}
               className="space-y-6"
             >
               {/* Nom */}

@@ -1,17 +1,17 @@
 ﻿/**
- * Composant About - Section "Ã€ propos de moi"
+ * Composant About - Section "À propos de moi"
  * Affiche la description personnelle et les informations de base
  */
 import { personalInfo } from "@/data/portfolio";
 
 export default function About() {
   return (
-    <section id="apropos" className="py-20 bg-white dark:bg-gray-900">
+    <section id="apropos" className="scroll-mt-20 py-20 bg-white dark:bg-gray-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Titre de section */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Ã€ Propos de Moi
+            À Propos de Moi
           </h2>
           <div className="w-20 h-1 bg-slate-600 mx-auto rounded-full" />
         </div>
@@ -28,12 +28,12 @@ export default function About() {
                     .join("")}
                 </span>
               </div>
-              {/* DÃ©coration */}
+              {/* Décoration */}
               <div className="absolute -bottom-4 -right-4 w-64 h-64 sm:w-80 sm:h-80 rounded-2xl border-2 border-slate-600/30 -z-10" />
             </div>
           </div>
 
-          {/* Texte Ã  propos */}
+          {/* Texte à propos */}
           <div>
             <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
               Salut, je suis{" "}
@@ -42,7 +42,7 @@ export default function About() {
               </span>
             </h3>
 
-            {/* Description avec sauts de ligne prÃ©servÃ©s */}
+            {/* Description avec sauts de ligne préservés */}
             <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
               {personalInfo.about.split("\n\n").map((paragraph, index) => (
                 <p key={index}>{paragraph.trim()}</p>

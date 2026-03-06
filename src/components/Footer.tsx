@@ -1,6 +1,6 @@
 ﻿/**
  * Composant Footer - Pied de page
- * Affiche les crÃ©dits et les liens sociaux
+ * Affiche les crédits et les liens sociaux
  */
 import { personalInfo } from "@/data/portfolio";
 
@@ -72,7 +72,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <p className="text-gray-500 text-sm text-center md:text-right">
-            &copy; {currentYear} {personalInfo.name}. Tous droits rÃ©servÃ©s.
+            &copy; {currentYear} {personalInfo.name}. Tous droits réservés.
           </p>
         </div>
       </div>

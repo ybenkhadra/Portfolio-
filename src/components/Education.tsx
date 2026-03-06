@@ -1,12 +1,12 @@
 ﻿/**
  * Composant Education - Section "Formation"
- * Affiche le parcours acadÃ©mique sous forme de timeline
+ * Affiche le parcours académique sous forme de timeline
  */
 import { education } from "@/data/portfolio";
 
 export default function Education() {
   return (
-    <section id="education" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <section id="education" className="scroll-mt-20 py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Titre de section */}
         <div className="text-center mb-16">
@@ -15,7 +15,7 @@ export default function Education() {
           </h2>
           <div className="w-20 h-1 bg-slate-600 mx-auto rounded-full" />
           <p className="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Mon parcours acadÃ©mique et mes qualifications
+            Mon parcours académique et mes qualifications
           </p>
         </div>
 
@@ -44,24 +44,24 @@ export default function Education() {
                   }`}
                 >
                   <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-100 dark:border-gray-700">
-                    {/* PÃ©riode */}
+                    {/* Période */}
                     <span className="inline-block px-3 py-1 text-xs font-semibold text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-900/50 rounded-full mb-3">
                       {edu.period}
                     </span>
 
-                    {/* DiplÃ´me */}
+                    {/* Diplôme */}
                     <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1">
                       {edu.degree}
                     </h3>
 
-                    {/* Ã‰tablissement */}
+                    {/* Établissement */}
                     <p className="text-slate-600 dark:text-slate-400 font-medium mb-1">
                       {edu.institution}
                     </p>
 
                     {/* Localisation */}
                     <p className="text-sm text-gray-500 dark:text-gray-500 mb-3">
-                      ðŸ“ {edu.location}
+                      📍 {edu.location}
                     </p>
 
                     {/* Description */}
